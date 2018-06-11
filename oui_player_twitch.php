@@ -60,10 +60,6 @@ namespace Oui\Player {
             );
         }
 
-        global $event;
-
-        if (txpinterface === 'admin' && ($event === 'prefs' || $event === 'plugin_prefs.oui_player_twitch')) {
-            Twitch::getInstance();
-        }
+        register_callback('Oui\Player\Twitch::getProvider', 'oui_player', 'plug_providers');
     }
 }
