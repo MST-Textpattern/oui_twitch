@@ -1,8 +1,8 @@
 #Default language, en-us, en-gb
 #@admin
 oui_player_provider_twitch => Twitch
-oui_player_twitch => Twitch player (oui_player_twitch)
-oui_player_twitch_prefs => Display the Twitch player prefs
+oui_player_twitch => Twitch player
+oui_player_twitch_prefs => Display the Twitch player preferences
 oui_player_twitch_width => Player width
 oui_player_twitch_height => Player height
 oui_player_twitch_ratio => Player ratio by default

@@ -1,7 +1,7 @@
 #@language fr-fr
 #@admin
 oui_player_provider_twitch => Twitch
-oui_player_twitch => Lecteur Twitch (oui_player_twitch)
+oui_player_twitch => Lecteur Twitch
 oui_player_twitch_prefs => Afficher les préférences du lecteur Twitch
 oui_player_twitch_width => Largeur du lecteur
 oui_player_twitch_height => Hauteur du lecteur
