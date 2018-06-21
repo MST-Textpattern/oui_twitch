@@ -60,6 +60,5 @@ namespace Oui\Player {
             );
         }
 
-        register_callback('Oui\Player\Twitch::getProvider', 'oui_player', 'plug_providers');
     }
 }
