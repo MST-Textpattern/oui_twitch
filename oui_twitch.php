@@ -50,15 +50,9 @@ namespace Oui {
             protected static $src = '//player.twitch.tv/';
             protected static $glue = array('?', '&amp;', '&amp;');
             protected static $dims = array(
-                'width'     => array(
-                    'default' => '620',
-                ),
-                'height'    => array(
-                    'default' => '378',
-                ),
-                'ratio'     => array(
-                    'default' => '',
-                ),
+                'width'  => '620',
+                'height' => '378',
+                'ratio'  => '',
             );
             protected static $params = array(
                 'autoplay' => array(
