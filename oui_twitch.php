@@ -77,13 +77,3 @@ namespace Oui {
         }
     }
 }
-
-namespace {
-    function oui_twitch($atts) {
-        return oui_player(array_merge(array('provider' => 'twitch'), $atts));
-    }
-
-    function oui_if_twitch($atts, $thing) {
-        return oui_if_player(array_merge(array('provider' => 'twitch'), $atts), $thing);
-    }
-}
