@@ -103,6 +103,8 @@ The related preference is a generic oui_player preference; it is applied to all 
 
 h5. Parameters
 
+From Txp 4.7, paramaters accepting @true@ and @false@ as valid values can be enable through boolean/valueless attributes.
+
 - @autoplay@ :=
 @true@ or @false@; initially set to @true@.
 Whether to play after loading or not. =:
