@@ -29,45 +29,44 @@
  * @package Oui\Player
  */
 
-namespace Oui {
+namespace Oui;
 
-    if (class_exists('Oui\Provider')) {
+if (class_exists('Oui\Provider')) {
 
-        class Twitch extends Provider
-        {
-            protected static $patterns = array(
-                'video' => array(
-                    'scheme' => '#^((http|https)://(www\.)?twitch\.tv/videos/([0-9]+))$#i',
-                    'id'     => '4',
-                    'prefix' => 'video=v',
-                ),
-                'channel' => array(
-                    'scheme' => '#^((http|https):\/\/(www.)?twitch\.tv\/([^\&\?\/]+))$#i',
-                    'id'     => '4',
-                    'prefix' => 'channel=',
-                ),
-            );
-            protected static $src = '//player.twitch.tv/';
-            protected static $glue = array('?', '&amp;', '&amp;');
-            protected static $dims = array(
-                'width'  => '620',
-                'height' => '378',
-                'ratio'  => '',
-            );
-            protected static $params = array(
-                'autoplay' => array(
-                    'default' => 'true',
-                    'valid'   => array('true', 'false'),
-                ),
-                'muted'    => array(
-                    'default' => 'false',
-                    'valid'   => array('true', 'false'),
-                ),
-                'time'     => array(
-                    'default' => '',
-                    'valid'   => 'number',
-                ),
-            );
-        }
+    class Twitch extends Provider
+    {
+        protected static $srcBase = '//player.twitch.tv/';
+        protected static $srcGlue = array('?', '&amp;', '&amp;');
+        protected static $iniDims = array(
+            'width'  => '620',
+            'height' => '378',
+            'ratio'  => '',
+        );
+        protected static $iniParams = array(
+            'autoplay' => array(
+                'default' => 'true',
+                'valid'   => array('true', 'false'),
+            ),
+            'muted'    => array(
+                'default' => 'false',
+                'valid'   => array('true', 'false'),
+            ),
+            'time'     => array(
+                'default' => '',
+                'valid'   => 'number',
+            ),
+        );
+        protected static $mediaPatterns = array(
+            'video' => array(
+                'scheme' => '#^(https?://(www\.)?twitch\.tv/videos/([0-9]+))$#i',
+                'id'     => '4',
+                'prefix' => 'video=v',
+            ),
+            'channel' => array(
+                'scheme' => '#^(https?:\/\/(www.)?twitch\.tv\/([^\&\?\/]+))$#i',
+                'id'     => '4',
+                'prefix' => 'channel=',
+            ),
+        );
     }
 }
