@@ -38,9 +38,13 @@ if (class_exists('Oui\Provider')) {
         protected static $srcBase = '//player.twitch.tv/';
         protected static $srcGlue = array('?', '&amp;', '&amp;');
         protected static $iniDims = array(
-            'width'  => '620',
-            'height' => '378',
-            'ratio'  => '',
+            'width'      => '620',
+            'height'     => '378',
+            'ratio'      => '',
+            'responsive' => array(
+                'default' => 'false',
+                'valid'   => array('true', 'false'),
+            ),
         );
         protected static $iniParams = array(
             'autoplay' => array(
