@@ -63,12 +63,12 @@ if (class_exists('Oui\Provider')) {
         protected static $mediaPatterns = array(
             'video' => array(
                 'scheme' => '#^(https?://(www\.)?twitch\.tv/videos/([0-9]+))$#i',
-                'id'     => '4',
+                'id'     => '3',
                 'prefix' => 'video=v',
             ),
             'channel' => array(
                 'scheme' => '#^(https?:\/\/(www.)?twitch\.tv\/([^\&\?\/]+))$#i',
-                'id'     => '4',
+                'id'     => '3',
                 'prefix' => 'channel=',
             ),
         );
