@@ -31,9 +31,9 @@
 
 namespace Oui;
 
-if (class_exists('Oui\Provider')) {
+if (class_exists('Oui\Player\Provider')) {
 
-    class Twitch extends Provider
+    class Twitch extends Player\Provider
     {
         protected static $srcBase = '//player.twitch.tv/';
         protected static $srcGlue = array('?', '&amp;', '&amp;');
