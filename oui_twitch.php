@@ -33,8 +33,11 @@ namespace Oui;
 
 if (class_exists('Oui\Player\Provider')) {
 
-    class Twitch extends Player\Provider
+    class Twitch extends Player\OEmbed
     {
+        protected static $endPoint = 'https://api.twitch.tv/v4/oembed';
+        protected static $URLBase = 'https://www.twitch.tv/';
+
         protected static $srcBase = '//player.twitch.tv/';
         protected static $srcGlue = array('?', '&amp;', '&amp;');
         protected static $iniDims = array(
